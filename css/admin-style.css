@@ -1,0 +1,100 @@
+/* Admin Dashboard Styles */
+.dashboard-card {
+    min-height: 150px;
+    width: 100%;
+}
+
+.dashboard-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dashboard-trend {
+    font-size: 0.9em;
+}
+
+.dashboard-trend.positive {
+    color: #4CAF50;
+}
+
+.dashboard-trend.negative {
+    color: #F44336;
+}
+
+/* Table Styles */
+.full-width {
+    width: 100%;
+}
+
+.status-badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+}
+
+.status-success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.status-pending {
+    background-color: #FFC107;
+    color: black;
+}
+
+.status-error {
+    background-color: #F44336;
+    color: white;
+}
+
+/* Drawer Styles */
+.mdl-layout__drawer .mdl-navigation__link {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+}
+
+.mdl-layout__drawer .mdl-navigation__link i {
+    margin-right: 32px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.mdl-layout__drawer .mdl-navigation__link:hover {
+    background-color: #e0e0e0;
+}
+
+/* Card Styles */
+.mdl-card {
+    overflow: visible;
+}
+
+.mdl-card__supporting-text {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header Icons */
+.mdl-layout__header .material-icons {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .mdl-layout__header-row {
+        padding-left: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-card {
+        min-height: 120px;
+    }
+    
+    .dashboard-number {
+        font-size: 2em;
+    }
+}

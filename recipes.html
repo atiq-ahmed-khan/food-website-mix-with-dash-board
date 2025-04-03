@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - Atiq Ahmed Food Fun</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        .recipe-filters {
+            padding: 20px;
+            background: #f5f5f5;
+            margin-bottom: 20px;
+        }
+        .recipe-card {
+            width: 100%;
+        }
+        .recipe-card__title {
+            height: 176px;
+            color: white;
+            background: url('images/placeholder.jpg') center / cover;
+        }
+        .recipe-stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 16px;
+            color: rgba(0,0,0,0.54);
+        }
+    </style>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Atiq Ahmed Food Fun</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="index.html">Home</a>
+                    <a class="mdl-navigation__link" href="recipes.html">Recipes</a>
+                    <a class="mdl-navigation__link" href="about.html">About</a>
+                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                    <a class="mdl-navigation__link" href="login.html">Login</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Filters Section -->
+                <div class="recipe-filters mdl-shadow--2dp">
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="search-recipes">
+                                <label class="mdl-textfield__label" for="search-recipes">Search Recipes...</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <select class="mdl-textfield__input" id="category">
+                                    <option value="">All Categories</option>
+                                    <option value="breakfast">Breakfast</option>
+                                    <option value="lunch">Lunch</option>
+                                    <option value="dinner">Dinner</option>
+                                    <option value="dessert">Dessert</option>
+                                </select>
+                                <label class="mdl-textfield__label" for="category">Category</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <select class="mdl-textfield__input" id="cuisine">
+                                    <option value="">All Cuisines</option>
+                                    <option value="italian">Italian</option>
+                                    <option value="indian">Indian</option>
+                                    <option value="chinese">Chinese</option>
+                                    <option value="mexican">Mexican</option>
+                                </select>
+                                <label class="mdl-textfield__label" for="cuisine">Cuisine</label>
+                            </div>
+                        </div>
+                        <div class="mdl-cell mdl-cell--3-col">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                                Apply Filters
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipes Grid -->
+                <div class="mdl-grid">
+                    <!-- Recipe Card 1 -->
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp recipe-card">
+                            <div class="mdl-card__title recipe-card__title">
+                                <h2 class="mdl-card__title-text">Spaghetti Carbonara</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Classic Italian pasta dish with eggs, cheese, pancetta, and black pepper.
+                            </div>
+                            <div class="recipe-stats">
+                                <span><i class="material-icons">schedule</i> 30 mins</span>
+                                <span><i class="material-icons">star</i> 4.5</span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    View Recipe
+                                </a>
+                                <div class="mdl-layout-spacer"></div>
+                                <button class="mdl-button mdl-button--icon mdl-button--colored">
+                                    <i class="material-icons">favorite_border</i>
+                                </button>
+                                <button class="mdl-button mdl-button--icon mdl-button--colored">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 2 -->
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp recipe-card">
+                            <div class="mdl-card__title recipe-card__title">
+                                <h2 class="mdl-card__title-text">Chicken Tikka Masala</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Grilled chicken in a rich, creamy tomato-based curry sauce.
+                            </div>
+                            <div class="recipe-stats">
+                                <span><i class="material-icons">schedule</i> 45 mins</span>
+                                <span><i class="material-icons">star</i> 4.8</span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    View Recipe
+                                </a>
+                                <div class="mdl-layout-spacer"></div>
+                                <button class="mdl-button mdl-button--icon mdl-button--colored">
+                                    <i class="material-icons">favorite_border</i>
+                                </button>
+                                <button class="mdl-button mdl-button--icon mdl-button--colored">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recipe Card 3 -->
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp recipe-card">
+                            <div class="mdl-card__title recipe-card__title">
+                                <h2 class="mdl-card__title-text">Chocolate Lava Cake</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Decadent chocolate dessert with a molten center.
+                            </div>
+                            <div class="recipe-stats">
+                                <span><i class="material-icons">schedule</i> 25 mins</span>
+                                <span><i class="material-icons">star</i> 4.9</span>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    View Recipe
+                                </a>
+                                <div class="mdl-layout-spacer"></div>
+                                <button class="mdl-button mdl-button--icon mdl-button--colored">
+                                    <i class="material-icons">favorite_border</i>
+                                </button>
+                                <button class="mdl-button mdl-button--icon mdl-button--colored">
+                                    <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col" style="text-align: center;">
+                        <button class="mdl-button mdl-js-button mdl-button--raised">
+                            <i class="material-icons">chevron_left</i>
+                        </button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">1</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised">2</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised">3</button>
+                        <button class="mdl-button mdl-js-button mdl-button--raised">
+                            <i class="material-icons">chevron_right</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

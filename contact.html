@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Atiq Ahmed Food Fun</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        .contact-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .contact-card {
+            padding: 32px;
+        }
+        .contact-form {
+            width: 100%;
+        }
+        .contact-info {
+            margin-top: 32px;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin: 16px 0;
+        }
+        .contact-method i {
+            margin-right: 16px;
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Atiq Ahmed Food Fun</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="index.html">Home</a>
+                    <a class="mdl-navigation__link" href="recipes.html">Recipes</a>
+                    <a class="mdl-navigation__link" href="about.html">About</a>
+                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                    <a class="mdl-navigation__link" href="login.html">Login</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="contact-container">
+                    <div class="mdl-card mdl-shadow--2dp contact-card">
+                        <h2 class="mdl-card__title-text">Contact Us</h2>
+                        
+                        <div class="mdl-grid">
+                            <!-- Contact Form -->
+                            <div class="mdl-cell mdl-cell--8-col">
+                                <form action="#" class="contact-form">
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="name">
+                                        <label class="mdl-textfield__label" for="name">Name</label>
+                                    </div>
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="email" id="email">
+                                        <label class="mdl-textfield__label" for="email">Email</label>
+                                    </div>
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="subject">
+                                        <label class="mdl-textfield__label" for="subject">Subject</label>
+                                    </div>
+
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <textarea class="mdl-textfield__input" type="text" rows="5" id="message"></textarea>
+                                        <label class="mdl-textfield__label" for="message">Message</label>
+                                    </div>
+
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+
+                            <!-- Contact Information -->
+                            <div class="mdl-cell mdl-cell--4-col">
+                                <div class="contact-info">
+                                    <h4>Get in Touch</h4>
+                                    
+                                    <div class="contact-method">
+                                        <i class="material-icons">email</i>
+                                        <span>katiq376@gmail.com</span>
+                                    </div>
+
+                                    <div class="contact-method">
+                                        <i class="material-icons">phone</i>
+                                        <span>+1 234 567 890</span>
+                                    </div>
+
+                                    <div class="contact-method">
+                                        <i class="material-icons">location_on</i>
+                                        <span>123 Food Street, Kitchen City, FC 12345</span>
+                                    </div>
+
+                                    <div class="contact-method">
+                                        <i class="material-icons">schedule</i>
+                                        <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                                    </div>
+                                </div>
+
+                                <!-- Social Media Links -->
+                                <div style="margin-top: 32px;">
+                                    <h4>Follow Us</h4>
+                                    <div>
+                                        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                                            <i class="material-icons">facebook</i>
+                                        </button>
+                                        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                                            <i class="material-icons">twitter</i>
+                                        </button>
+                                        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+                                            <i class="material-icons">instagram</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Styles */
+.mdl-card {
+    width: 100%;
+    min-height: 320px;
+}
+
+.mdl-card__title {
+    height: 176px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Styles */
+.mdl-layout__header {
+    background-color: #2196F3;
+}
+
+/* Navigation Styles */
+.mdl-navigation__link {
+    font-weight: 500;
+}
+
+/* Search Box Styles */
+.mdl-textfield__expandable-holder {
+    max-width: 200px;
+}
+
+/* Grid Spacing */
+.mdl-grid {
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        height: 50vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: 40vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 2em;
+    }
+}
+
+/* Footer Styles */
+.mdl-mini-footer {
+    background-color: #1976D2;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Card Hover Effects */
+.mdl-card {
+    transition: transform 0.3s ease;
+}
+
+.mdl-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Button Styles */
+.mdl-button--colored {
+    background-color: #FF4081;
+    color: white;
+}
+
+.mdl-button--colored:hover {
+    background-color: #F50057;
+}
+
+/* Recipe Gallery Styles */
+.recipe-gallery {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.recipe-card {
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.recipe-card:hover .recipe-image {
+    transform: scale(1.05);
+}
+
+.recipe-content {
+    padding: 1.5rem;
+}
+
+.recipe-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.filter-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 25px;
+    background: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #ff6b6b;
+    color: white;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+#recipe-search {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#recipe-search:focus {
+    outline: none;
+    border-color: #ff6b6b;
+}
+
+/* Loading animation */
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .recipe-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        width: 100%;
+    }
+    
+    .filter-btn {
+        margin-bottom: 0.5rem;
+    }
+}

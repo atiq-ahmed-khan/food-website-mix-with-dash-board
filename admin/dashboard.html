@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Atiq Ahmed Food Fun</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="../css/admin-style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Admin Dashboard</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search">
+                    </div>
+                </div>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="notifications">
+                    <i class="material-icons">notifications</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="user-menu">
+                    <i class="material-icons">person</i>
+                </button>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Admin Menu</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="dashboard.html"><i class="material-icons">dashboard</i>Dashboard</a>
+                <a class="mdl-navigation__link" href="dcc_rec.html"><i class="material-icons">assignment</i>DCC REC</a>
+                <a class="mdl-navigation__link" href="dcc_dis.html"><i class="material-icons">assignment</i>DCC DIS</a>
+                <a class="mdl-navigation__link" href="ckd.html"><i class="material-icons">assignment</i>CKD</a>
+                <a class="mdl-navigation__link" href="rms.html"><i class="material-icons">assignment</i>RMS</a>
+                <a class="mdl-navigation__link" href="rps.html"><i class="material-icons">assignment</i>RPS</a>
+                <a class="mdl-navigation__link" href="pps.html"><i class="material-icons">assignment</i>PPS</a>
+                <a class="mdl-navigation__link" href="gs.html"><i class="material-icons">assignment</i>GS</a>
+                <a class="mdl-navigation__link" href="users.html"><i class="material-icons">people</i>Users</a>
+                <a class="mdl-navigation__link" href="recipes.html"><i class="material-icons">restaurant_menu</i>Recipes</a>
+                <a class="mdl-navigation__link" href="comments.html"><i class="material-icons">comment</i>Comments</a>
+                <a class="mdl-navigation__link" href="categories.html"><i class="material-icons">category</i>Categories</a>
+                <a class="mdl-navigation__link" href="analytics.html"><i class="material-icons">analytics</i>Analytics</a>
+                <a class="mdl-navigation__link" href="settings.html"><i class="material-icons">settings</i>Settings</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Dashboard Cards -->
+                <div class="mdl-grid">
+                    <!-- DCC REC Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">DCC REC</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DCC DIS Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">DCC DIS</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CKD Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">CKD</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RMS Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">RMS</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RPS Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">RPS</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PPS Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">PPS</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GS Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">GS</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Total Users Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Total Users</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">1,234</span>
+                                <span class="dashboard-trend positive">+5.3%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Total Recipes Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Total Recipes</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">456</span>
+                                <span class="dashboard-trend positive">+2.7%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comments Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">New Comments</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">89</span>
+                                <span class="dashboard-trend negative">-1.2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page Views Card -->
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card mdl-shadow--2dp dashboard-card">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Page Views</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="dashboard-number">10.5K</span>
+                                <span class="dashboard-trend positive">+8.4%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity Table -->
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Recent Activity</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable full-width">
+                                    <thead>
+                                        <tr>
+                                            <th class="mdl-data-table__cell--non-numeric">Activity</th>
+                                            <th class="mdl-data-table__cell--non-numeric">User</th>
+                                            <th class="mdl-data-table__cell--non-numeric">Date</th>
+                                            <th class="mdl-data-table__cell--non-numeric">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="mdl-data-table__cell--non-numeric">New Recipe Added</td>
+                                            <td class="mdl-data-table__cell--non-numeric">John Doe</td>
+                                            <td class="mdl-data-table__cell--non-numeric">2025-01-05</td>
+                                            <td class="mdl-data-table__cell--non-numeric">
+                                                <span class="status-badge status-success">Published</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mdl-data-table__cell--non-numeric">Comment Posted</td>
+                                            <td class="mdl-data-table__cell--non-numeric">Jane Smith</td>
+                                            <td class="mdl-data-table__cell--non-numeric">2025-01-05</td>
+                                            <td class="mdl-data-table__cell--non-numeric">
+                                                <span class="status-badge status-pending">Pending</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
